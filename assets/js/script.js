@@ -28,5 +28,6 @@ const menu = document.querySelector('.menu-responsive');
 const bigMenu = document.querySelector('.big-menu');
 
 bigMenu.addEventListener('click', (e) => {
+    bigMenu.classList.toggle('active');
     menu.classList.toggle('active');
 })
