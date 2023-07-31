@@ -106,43 +106,42 @@ ul li:nth-child(4) {
 .menu-responsive.active {
     display: block;
     transform: none;
-    /* background: red; */
 }
 
 .big-menu.active {
     background: white;
 }
 
-.big-menu.active div {
+.big-menu.active .min-menu {
     background: var(--first-theme-color);
 }
 
-.big-menu div::after {
+.big-menu .min-menu::after {
     content: '';
     position: absolute;
     top: -0.4em;
     left: 0;
-    width: 50%;
+    width: 35%;
     height: 100%;
     background: inherit;
     transition: 0.7s;
 }
 
-.big-menu div::before {
+.big-menu .min-menu::before {
     content: '';
     position: absolute;
     bottom: -0.4em;
     right: 0;
-    width: 50%;
+    width: 35%;
     height: 100%;
     background: inherit;
     transition: 0.7s;
 }
 
-.big-menu.active div::after {
+.big-menu.active .min-menu::after {
     width: 100%;
 }
 
-.big-menu.active div::before {
+.big-menu.active .min-menu::before {
     width: 100%;
 }
