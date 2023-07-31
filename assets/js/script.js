@@ -22,3 +22,11 @@ slide_1.forEach(element => {
 hiddenElementsmax.forEach(element => {
     observer.observe(element);
 })
+
+
+const menu = document.querySelector('.menu-responsive');
+const bigMenu = document.querySelector('.big-menu');
+
+bigMenu.addEventListener('click', (e) => {
+    menu.classList.toggle('active');
+})
