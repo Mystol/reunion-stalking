@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réunion</title>
+    <link rel="stylesheet" href="../../dist/style.css">
+</head>
+<body class="relative w-full">
+
+    <div class="w-full h-screen flex items-center">
+        <div class="w-[15%] h-full flex justify-between items-center flex-col">
+            <div class="mt-12">
+                <a class="uppercase font-extrabold" href="#">Logo</a>
+            </div>
+            <ul class="w-full flex items-center justify-center flex-col gap-8 px-8">
+                <li class="w-full flex items-center gap-1  bg-green-400 rounded-md h-10 pl-2">
+                    <ion-icon class="text-lg text-white" name="cash-outline"></ion-icon>
+                    <a class="text-sm text-white font-bold" href="dashboard.php">Tout le monde</a>
+                </li>
+                <li class="w-full flex items-center gap-1 bg-green-400  rounded-md h-10 pl-2">
+                    <ion-icon class="text-lg text-white" name="cash-outline"></ion-icon>
+                    <a class="text-sm text-white font-bold" href="null_member.php">Invité</a>
+                </li>
+                <li class="w-full flex items-center gap-1 bg-green-400  rounded-md h-10 pl-2">
+                    <ion-icon class="text-lg text-white" name="cash-outline"></ion-icon>
+                    <a class="text-sm text-white font-bold" href="member.php">Membre</a>
+                </li>
+                <li class="w-full flex items-center gap-1 bg-green-400  rounded-md h-10 pl-2">
+                    <ion-icon class="text-lg text-white" name="cash-outline"></ion-icon>
+                    <a class="text-sm text-white font-bold" href="not_member.php">Non membre</a>
+                </li>
+            </ul>
+            <div class="flex items-center gap-5 mb-12">
+                <p class="font-bold">Mode</p>
+                <div class="h-5 w-12 flex items-center pl-1 bg-green-400 rounded-full">
+                    <div class="w-4 h-4 bg-white rounded-full"></div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[85%] h-full px-10">
+            <header class="w-full flex items-center justify-between mt-5">
+                <form action="#">
+                    <input class="py-1 pl-5 border-2 border-green-400 rounded-lg outline-none" type="search" id="search" name="search" placeholder="Recherchez">
+                </form>
+                <div class="flex items-center gap-5">
+                    <h1>Ouvrir pour tout le monde</h1>
+                    <div class="h-5 w-12 flex items-center pl-1 bg-green-400 rounded-full">
+                        <div class="w-4 h-4 bg-white rounded-full"></div>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div class="w-8 h-8 flex justify-center items-center border-2 border-green-400 rounded-md"><ion-icon class="text-green-400 text-lg" name="cash-outline"></ion-icon></div>
+                        <div class="w-8 h-8 rounded bg-green-400"></div>
+                        <h2>Administrateur</h2>
+                    </div>
+                </div>
+            </header>
+            <div class="w-full h-[550px] bg-green-400 mt-7 rounded-lg px-8 py-5">
+                <h1 class="text-white font-bold text-lg">Liste de la réunion</h1>
+                <div class="w-full flex items-center justify-between">
+                    <ul class="flex items-center gap-3">
+                        <li><a class="text-white underline font-bold" href="#">Tout le monde</a></li>
+                        <li><a class="text-white font-bold" href="#">Membre</a></li>
+                        <li><a class="text-white font-bold" href="#">Invité</a></li>
+                    </ul>
+                    <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-2 bg-white border-2 border-white py-1 px-4 rounded-md">
+                            <ion-icon class="text-lg text-black" name="cash-outline"></ion-icon>
+                            <p class="text-xs font-bold">2022/10/02</p>
+                        </div>
+                        <p class="text-white font-bold">A</p>
+                        <div class="flex items-center gap-2 bg-white border-2 border-white py-1 px-4 rounded-md">
+                            <ion-icon class="text-lg text-black" name="cash-outline"></ion-icon>
+                            <p class="text-xs font-bold">2022/10/02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full grid grid-cols-6 items-center my-5 bg-white px-5 py-2 font-bold text-sm border-2 border-black rounded">
+                    <p>#N° de membre</p>
+                    <p>Nom</p>
+                    <p>Prénom</p>
+                    <p>Statut</p>
+                    <p>Contact</p>
+                    <p>Sexe</p>
+                </div>
+                <div class="w-full h-[24em] overflow-y-scroll overflow-x-hidden mt-3">
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#4DCx78</p>
+                        <p>CODJIA</p>
+                        <p>Hugue</p>
+                        <p>Membre</p>
+                        <p>95 28 45 20</p>
+                        <p>Masculin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#c4Ex7M</p>
+                        <p>BOCOVO</p>
+                        <p>Melicka</p>
+                        <p>Non membre</p>
+                        <p>97 88 10 40</p>
+                        <p>Féminin</p>
+                    </div>
+                    <div class="w-full grid grid-cols-6 items-center mb-2 bg-white px-5 py-2 font-bold text-sm border-2 border-gray-100 rounded duration-75 hover:scale-[1.05] hover:bg-slate-100">
+                        <p>#s4evvD</p>
+                        <p>HOUNSOU</p>
+                        <p>Buse</p>
+                        <p>Invité</p>
+                        <p>45 00 40 10</p>
+                        <p>Masculin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- start import all module js -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- end import all module js  -->
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</body>
+</html>

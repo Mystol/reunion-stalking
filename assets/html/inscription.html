@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réunion</title>
+    <link rel="stylesheet" href="../../dist/style.css">
+</head>
+<body class="relative w-full">
+
+    <div class="w-full min-h-screen flex justify-center items-center">
+        <div class="w-[80%] h-[80%] flex max-lg:flex-col max-lg:w-full max-lg:px-4">
+            <div class="w-1/2 bg-black max-lg:hidden"></div>
+            <form class="w-1/2 max-lg:w-full h-full flex justify-center items-center flex-col max-lg:shadow-xl border-[1px] border-gray-600 max-lg:py-10 px-12 shadow-md max-lg:px-2" action="add_user.php" method="post">
+                <h1 class="w-full text-center text-2xl font-bold my-6">Marquez votre présence</h1>
+                <div class="w-full flex justify-between items-center gap-4">
+                    <div class="w-full">
+                        <input class="w-full py-2 pl-5 border-2 border-[--first-theme-color] rounded outline-none" type="text" id="member_num" name="member_num" placeholder="Numéro">
+                    </div>
+                    <div class="w-full">
+                        <input class="w-full py-2 pl-5 border-2 border-[--first-theme-color] rounded outline-none" type="text" id="contact" name="contact" placeholder="Contact">
+                    </div>
+                </div>
+                <div class="w-full my-4">
+                    <input class="w-full py-2 pl-5 border-2 border-[--first-theme-color] rounded outline-none" type="text" id="name" name="name" placeholder="Nom">
+                </div>
+                <div class="w-full">
+                    <input class="w-full py-2 pl-5 border-2 border-[--first-theme-color] rounded outline-none" type="text" id="firstname" name="firstname" placeholder="Prénom">
+                </div>
+                <div class="w-full flex justify-between items-center gap-4 my-4">
+                    <select class="w-full py-2 rounded text-center bg-white border-2 border-[--first-theme-color] outline-none" name="status" id="statut">
+                        <option value="m_oui">Je suis Membre</option>
+                        <option value="m_non">Je ne suis pas Membre</option>
+                        <option value="m_null">Je suis Invité</option>
+                    </select>
+                    <select class="w-full py-2 rounded text-center bg-white border-2 border-[--first-theme-color] outline-none" name="sexe" id="sexe">
+                        <option value="man">Homme</option>
+                        <option value="woman">Femme</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="w-full bg-[--first-theme-color] py-2 px-10 rounded outline-none hover:cursor-pointer" type="submit" value="Enregistrez-vous">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- start import all module js -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- end import all module js  -->
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+</body>
+</html>

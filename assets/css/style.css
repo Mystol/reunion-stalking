@@ -1,0 +1,104 @@
+/* start to import google fonts uses to the project */
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;500;600;700;800;900;1000&display=swap');
+/* end to import google fonts uses to the project */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* start tailwindcss components */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* end tailwindcss components */
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* start all default selector */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+/* end all default selector */
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+/* start defined variables on root */
+:root {
+    --first-theme-color: rgb(252 211 77);
+    --second-theme-color: #ffffff;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+
+.mini-bg-1 {
+    background: linear-gradient(rgba(26, 23, 21, 0.685), rgba(3, 3, 3, 0.637)),
+    url('/assets/img/img-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mini-bg-2 {
+    background: linear-gradient(rgba(26, 23, 21, 0.685), rgba(3, 3, 3, 0.637)),
+    url('/assets/img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mini-bg-3 {
+    background: linear-gradient(rgba(26, 23, 21, 0.685), rgba(3, 3, 3, 0.637)),
+    url('/assets/img/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-1 {
+    opacity: 0;
+    transform: translateY(20%);
+}
+.slide-2 {
+    opacity: 0;
+    transform: translateY(-20%);
+}
+.slide-1:nth-child(1),
+.slide-2:nth-child(1) {
+    transition-delay: 0.5s;
+}
+.slide-1:nth-child(2),
+.slide-2:nth-child(2) {
+    transition-delay: 0.7s;
+}
+.slide-1:nth-child(3),
+.slide-2:nth-child(3) {
+    transition-delay: 0.9s;
+}
+ul li {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+ul li:nth-child(1) {
+    transition-delay: 0.5s;
+}
+ul li:nth-child(2) {
+    transition-delay: 0.7s;
+}
+ul li:nth-child(3) {
+    transition-delay: 0.9s;
+}
+ul li:nth-child(4) {
+    transition-delay: 1.1s;
+}
+
+
+.hidden_max {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.show {
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
