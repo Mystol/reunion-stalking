@@ -2,7 +2,7 @@ Arguments:
   C:\Program Files\nodejs\node.exe C:\Users\Marc-Aurel\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js global dir --json
 
 PATH: 
-  c:\Users\Marc-Aurel\AppData\Local\Programs\Cursor\resources\app\bin;C:\WINDOWS.X64_193000_db_home\bin;E:\Oracle_Cours\WINDOWS.X64_193000_db_home\bin;E:\Oracle\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\composer;C:\Program Files\Java\jdk-18.0.2.1\bin\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Marc-Aurel\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Marc-Aurel\AppData\Local\Programs\Python\Python310\;C:\Users\Marc-Aurel\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Php;C:\Users\Marc-Aurel\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\src\flutter\flutter\bin;C:\wamp64\bin\mysql\mysql5.7.31\bin;C:\Users\Marc-Aurel\AppData\Roaming\npm;;c:\Users\Marc-Aurel\AppData\Local\Programs\Cursor\resources\app\bin;C:\Users\Marc-Aurel\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Marc-Aurel\AppData\Local\Programs\Python\Python310\;C:\Users\Marc-Aurel\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Php;C:\Users\Marc-Aurel\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\src\flutter\flutter\bin;C:\wamp64\bin\mysql\mysql5.7.31\bin;C:\Users\Marc-Aurel\AppData\Roaming\npm;C:\Users\Marc-Aurel\AppData\Local\Programs\Microsoft VS Code\bin;
+  c:\Users\Marc-Aurel\AppData\Local\Programs\Cursor\resources\app\bin;C:\WINDOWS.X64_193000_db_home\bin;E:\Oracle_Cours\WINDOWS.X64_193000_db_home\bin;E:\Oracle\WINDOWS.X64_193000_db_home\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\composer;C:\Program Files\Java\jdk-18.0.2.1\bin\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Marc-Aurel\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Marc-Aurel\AppData\Local\Programs\Python\Python310\;C:\Users\Marc-Aurel\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Php;C:\Users\Marc-Aurel\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jdk-18.0.2.1\bin;C:\src\flutter\flutter\bin;C:\wamp64\bin\mysql\mysql5.7.31\bin;C:\Users\Marc-Aurel\AppData\Roaming\npm;;c:\Users\Marc-Aurel\AppData\Local\Programs\Cursor\resources\app\bin;C:\Users\Marc-Aurel\AppData\Local\Programs\Microsoft VS Code\bin
 
 Yarn version: 
   1.22.19
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: d:\Ma_Progression_En_Web\Projet\Reunion\package.json: Unexpected token } in JSON at position 282
+  SyntaxError: d:\Ma_Progression_En_Web\Projet\Mini-Reunion\package.json: Unexpected token } in JSON at position 200
       at JSON.parse (<anonymous>)
       at C:\Users\Marc-Aurel\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1629:59
       at Generator.next (<anonymous>)
@@ -29,7 +29,6 @@ npm manifest:
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "tailwindcss -i ./assets/css/style.css -o ./dist/style.css --watch",
     },
     "keywords": [],
     "author": "",
